@@ -1,4 +1,7 @@
 from turtle import *
+
+# The below code draws a raimbow
+
 bgcolor('aqua')
 speed(5)
 up()
