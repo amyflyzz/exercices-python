@@ -61,6 +61,4 @@ left(90)
 circle(10,360)
 end_fill()
 
-
-
 exitonclick()
