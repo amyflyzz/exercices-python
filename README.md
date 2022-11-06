@@ -21,8 +21,9 @@ Il y a aussi d’autres symboles pour les conditions :
 
 
 
-| Symbole  |      Définition       |
-|----------|:---------------------:|
-| `==`     |  Egale à              |
-| `!=`     |  N'es pas égale à     |
+| Symbole  |      Définition         |
+|----------|:-----------------------:|
+| `==`     |  Egale à                |
+| `!=`     |  N'es pas égale à       |
+| `x < y`  |  `x` est inferieur a `y`|
 
