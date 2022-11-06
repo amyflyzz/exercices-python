@@ -2,11 +2,14 @@ from turtle import *
 
 # The below code draws a raimbow
 
+
+
 bgcolor('aqua')
 speed(5)
 up()
 forward(300)
 down()
+
 
 color('red')
 begin_fill()
@@ -21,44 +24,27 @@ left(90)
 circle(250,180)
 end_fill()
 
-left(90)
-forward(450)
-color('yellow')
-begin_fill()
-left(90)
-circle(200,180)
-end_fill()
 
-left(90)
-forward(350)
-color('green')
-begin_fill()
-left(90)
-circle(150,180)
-end_fill()
+def trace_un_bout_de_arcenciel(distance, couleur, radius, extent = 180) :
+    left(90)
+    forward(distance)
+    color(couleur)
+    begin_fill()
+    left(90)
+    circle(radius,extent)
+    end_fill()
 
-left(90)
-forward(250)
-color('blue')
-begin_fill()
-left(90)
-circle(100,180)
-end_fill()
+trace_un_bout_de_arcenciel(450, "yellow", 200)
 
-left(90)
-forward(150)
-color('purple')
-begin_fill()
-left(90)
-circle(50,180)
-end_fill()
 
-left(90)
-forward(60)
-color('cyan')
-begin_fill()
-left(90)
-circle(10,360)
-end_fill()
+trace_un_bout_de_arcenciel(350, "green", 150)
+
+trace_un_bout_de_arcenciel(250, "blue", 100)
+
+trace_un_bout_de_arcenciel(150, "purple", 50)
+
+trace_un_bout_de_arcenciel(60, "cyan", 10, 360)
+
+
 
 exitonclick()
