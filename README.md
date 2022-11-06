@@ -1,4 +1,4 @@
-## if, else, elif ...  
+## if, else, elif
 
 *chap 5*
 
