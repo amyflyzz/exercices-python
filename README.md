@@ -119,10 +119,13 @@ import turtle
 turtle.forward(100)
 turtle.right(90)
 ```
-#image
+![image](https://user-images.githubusercontent.com/117589126/201330404-ca901707-d181-436c-857a-620b626ec9bd.png)
+
 
 les difffétents degrés :
-#image
+
+![image](https://user-images.githubusercontent.com/117589126/201330245-f3ccbb40-bd2b-494f-aeaf-7f3a82f8415c.png)
+
 
 donc pourun carré il faut fair ça :
 
