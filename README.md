@@ -2,20 +2,18 @@
 
 ctrl + c = copier
 ctrl + v= collé 
-pour utiliser " " ou () ou ’ dans une variable il faut entourer la variable 3 apostrophes ex :
- X « aujourd’hui il fait beau » 
- / ’’’aujourd’hui il fait beau ’’’
-alors pour ne pas mettre les 3 apostrophes il faut mettre un slash avant la parenthèse, apostrophe, guillemet.  
-«aujourd/’hui il fait beau »  
-Ou                                                              
-«/ aujourd’hui il fait beau / »
+pour utiliser `'` dans un string il faut entourer la variable 3 apostrophes ex :  
+`'aujourd'''hui il fait beau'`  
+pour ne pas mettre les 3 apostrophes il faut mettre un back slash avant la parenthèse, apostrophe, guillemet.   
+`«aujourd\'hui il fait beau »`  
+
 
 ## Calcul 
-pour la division il faut utiliser  «/»
-pour la somme «+»
-pour la multiplication  «*»
-pour la soustraction «-»
-et pour l’égale «=»
+pour la division il faut utiliser  `/`
+pour la somme `+`
+pour la multiplication  `*`
+pour la soustraction `-`
+et pour l’égale `==`
 
 ## =
 avec l’égale ou peux faire devenir des mots en autre mot :   
@@ -24,21 +22,24 @@ print ( gâteau)
 >>>bon
 
 ## .#
-Les « # » servent à faire des commentaires qui ne se voient pas et qui ne changent rien 
+Les « # » servent à faire des commentaires qui ne se voient pas et qui ne changent rien au fonctionnement du code.  
 
 
 ## %
-Le % remplace le « * »  
+Le `%` remplace le `*`  
 Ex :  
 ```python
 monscore = 100   
 message = « tu as obtenu %s pts »   
 print ( message % monscore )  
->> > tu as obtenu 100 pts
+```
+Output:  
+```
+>>> tu as obtenu 100 pts
 ```
 
-quand il y a « %s », ça veut dire qu’il y a quelque chose qui va le remplacer, et quand il y a  « % », c’est un texte comme là avec monscore, c’est ce qu’il est égal au monscore qui va elle ici.
-Ou sinon autre explication : dans le message, le %s est égal à monscore
+quand il y a `%s`, ça veut dire qu’il y a quelque chose qui va le remplacer, et quand il y a  « % », c’est un texte comme là avec monscore, c’est ce qu’il est égal au monscore qui va elle ici.  
+Ou sinon autre explication : dans le message, le %s est égal à monscore.  
 
 ## les différentes listes 
 
@@ -51,7 +52,10 @@ Exemple d’une liste avec plusieurs éléments distincts :
 Jour_de_la_semaine = ['demain', "c’est ",'samedi', 'donc',"c est", 'le' ,'week-end']
 Print =( Jour_de_la_semaine[2])
 ```
+Output:  
+```
 >>> 'samedi'
+```
 
 Le « c’est » est entourer de guillemets au lieu d’apostrophes, car il y a une apostrophe dans l’élément. Aussi, dans une liste, on commence a compté à partir de 0. 
 
@@ -60,7 +64,10 @@ Pour ne prendre que certain élément, il faut faire :
 Jour_de_la_semaine = ['demain', "c’est ",'samedi', 'donc', "c’est", 'le' ,'week-end']
 Print =( Jour_de_la_semaine[2:5])
 ```
+Output:  
+```
 >>> 'samedi', 'donc', "c’est", 'le'
+```
 
 ou peut aussi mettre deux chaines ensembles :
 ```python
@@ -68,7 +75,10 @@ liste_1 = ('a', 'b', 'c', 'd')
 liste_2 = ('1', '2', '3', '4') 
 print  (liste_1+liste_2)
 ```
+Output:  
+```
 >>> ('a', 'b', 'c', 'd', '1', '2', '3', '4')
+```
 
 Dans une liste, on peut aussi ajouter des choses grâce à « append » :
 ```python
@@ -76,7 +86,9 @@ liste_1 =['a', 'b', 'c', 'd']
 liste_1.append ('e')
 print (liste_1)
 ```
+```
 >>>['a', 'b', 'c', 'd', 'e']
+```
 
 Et c’est la même chose pour « del »
 ```python
@@ -84,7 +96,10 @@ liste_1 =['a', 'b', 'c', 'd']
 del liste_1 [3]
 print (liste_1)
 ```
+Output:  
+```
 >>>['a', 'b', 'c']
+```
 
 On peut aussi fusionner deux listes :
 ```python
@@ -93,14 +108,20 @@ liste_soleil2 = ['soleil']
 liste_marrelle =liste_soleil+liste_soleil2
 print (liste_marrelle)
 ```
+
+```
 >>>['1', '2', '3', 'soleil']
+``` 
 ou les multiplier 
 
 ```python
 liste_chiffre= ['1','2','3']
 print (liste_chiffre*5)
 ```
+Output:  
+```
 >>>['1', '2', '3', '1', '2', '3', '1', '2', '3', '1', '2', '3', '1', '2', '3']
+```
 
 mais aussi :
 grâce «dict» (dictionnaire) on peut retrouver des éléments (valeur)grâce à un autre élément (la clé) :
@@ -108,7 +129,10 @@ grâce «dict» (dictionnaire) on peut retrouver des éléments (valeur)grâce �
 sport_pref={'joseph':'boxe','francois':'escalade','stephan':'natation','sophie':'basket','elodie':'velo'}
 print (sport_pref ['joseph'])
 ```
+Output:  
+```
 >>>boxe
+```
 
 ## turtle
 
@@ -306,17 +330,23 @@ Pour ne plus répéter on peut utiliser la boucle for au lieu d’écrire a la m
 for x in range (0,5) : 
     print ('bonjour')
 ```
+Output:  
+```
 >>>bonjour  
 >>>bonjour  
 >>>bonjour   
 >>>bonjour  
 >>>bonjour
+```
 
 on peut aussi mélanger les listes avec les boucles :
 ```python
 print(list(range(10,20)))
 ```
->>>[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Output:  
+```
+>>>[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]  
+```
 
 Attention : la lettre au milieu de « for » et « in » est une lettre qu’on peut choisir on peut même le remplacer par un mot mais pas un nombre ou une phrase.
 
@@ -333,6 +363,8 @@ for x in liste_de_course :
     print(x)
     print(x)
 ```
+Output:  
+```
 >>>lait  
 >>>oeuf  
 >>>oeuf  
@@ -344,6 +376,7 @@ for x in liste_de_course :
 >>>poulet  
 >>>salade  
 >>>salade
+```
 
 ```python
 alphabet = ['a','b','c']
@@ -352,6 +385,8 @@ for x in alphabet:
     for y in alphabet:
         print(y)
 
+```
+Output:  
 ```
 >>>a  
 a  
@@ -365,6 +400,7 @@ c
 a  
 b  
 c
+```
 
 Ici ça donne ca car dans le premier bloque de code c’est dit que il faut faire « a » a la ligne « b » a la ligne « c » a la ligne puis dans le deuxième bloque de code il faut faire la même chose sauf que l’ordinateur produit le code de haut en bas c’est à dire que ça va faire « a » (du premier, bloque.) a la ligne « a » (du deuxième, bloque.) a la ligne « b » (du deuxième, bloque.) a la ligne « c » (du deuxième, bloque.) a la ligne ensuite « b » du premier bloque puis « a » (du deuxième, bloque.) a la ligne « b » (du deuxième, bloque. ) a la ligne « c » (du deuxième, bloque. ) a la ligne puis « c » du premier bloque puis « a » (du deuxième, bloque.) a la ligne « b » (du deuxième, bloque.) a la ligne « c » (du deuxième, bloque.) a la ligne puis fin
 
@@ -377,7 +413,8 @@ while x < 100 and y < 100 :
     y = y + 1 
     print(x,y)
 ```
-
+Output:  
+```
 >>>46 81  
 47 82  
 48 83  
@@ -398,6 +435,7 @@ while x < 100 and y < 100 :
 63 98  
 64 99  
 65 100
+
 
 La commande va donner cette réponse, car dans la commande, d’abord, le « x » commence à 45 et le « y » commence à 80 lignes de codage s’arrêta à 100 car c’est ce qui est marquer et dans ce codage, c’est quand le premier finit en l’occurrence le « y » l’autre s’arrête automatiquement.
 
@@ -430,6 +468,8 @@ for x in [2, 3, 2]:
         print("salut", y)
     print("b", x)
 ```
+Output:  
+```
 >>>a 2  
 salut 7  
 salut 1  
@@ -442,6 +482,7 @@ a 2
 salut 7  
 salut 1  
 b 2
+```  
 
 car comme dans le premier print il y a un « x » à coter du « a » il y aura un nombre qui va suivre en l’occurrence « 2 » puis ensuite à coter du premier « salut » il y aura un « 7 » car dans la commande a coter du « salut » il y a un « y » et que c’est le premier nombre dans la commande puis comme il y a deux nombre il y aura deux « salut » et du coup a coter du deuxième « salut » il y aura un « 1 » comme c’est le deuxième nombre. Puis pour le « b » c’est la même chose que pour le « a » comme il est au même niveau ‘contrairement au « salut » qui est à un cran au-dessus ) Donc, à coter du « b » il y aura un « 2 ». Pour la deuxième boucle, ça sera la même chose juste à la place du « 2 » il y aura un « 3 » vu que c'est la deuxième boucle.
 
@@ -449,17 +490,23 @@ car comme dans le premier print il y a un « x » à coter du « a » il y aura 
 for x in [2, 3, 2]:
     print("a %s %s" %(x, x))
 ```
+Output:  
+```
 >>>a 2 2  
 a 3 3  
 a 2 2
+``` 
 Car dans la commande le « %s %s » est égale a « %(x, x) » ce qui est lui-même égale dans la première ligne du codage au premier « 2 » et pareil pour les deux autres boucles.
 
 ```python
 for x in range (0,3) :
      print("a %s %s" %(x, x))
 ```
+Output:  
+``` 
 >>>a 0 0  
 a 1 1  
 a 2 2
+```
 
 Car pour la même raison que le précédent, mais dans ce cas-ci, on n’est pas obligé de mettre des chiffres choisit, on peut juste mettre le chiffre 
